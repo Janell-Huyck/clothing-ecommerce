@@ -1,5 +1,5 @@
 .button-container {
-    min-width: 165px;
+    min-width: 200px;
     width: auto;
     height: 50px;
     letter-spacing: 0.5px;
@@ -17,6 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border: 1px solid black;
   
     &:hover {
       background-color: white;
@@ -42,7 +43,7 @@
       &:hover {
         background-color: black;
         color: white;
-        border: none;
+        border: 1px solid black;
       }
     }
   }
