@@ -1,18 +1,12 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import './checkout.styles.scss';
 
 import { CartContext } from '../../contexts/cart.context';
 
 import CheckoutItem from '../../components/checkout-item/checkout-item.component.jsx';
 
-
-
 const Checkout = () => {
-    const { cartItems, totalCartValue, updateCartValue } = useContext(CartContext);
-
-    useEffect(() => {
-        updateCartValue(cartItems);
-        }, [cartItems]);
+    const { cartItems, totalCartValue } = useContext(CartContext);
 
     return (
         <div className="checkout-page">

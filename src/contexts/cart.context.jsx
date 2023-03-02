@@ -81,6 +81,10 @@ export const CartProvider = ({ children }) => {
         setItemCount(cartItems.reduce((acc, cartItem) => acc + cartItem.quantity, 0));
         }, [cartItems]);
 
+    useEffect(() => {
+        updateCartValue(cartItems);
+        }, [cartItems]);
+
     
     const value = {
         isCartOpen,
