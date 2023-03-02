@@ -1,8 +1,6 @@
 import { Outlet, Link } from 'react-router-dom'
 import { Fragment, useContext } from 'react'
 
-
-
 import { ReactComponent as CrownLogo } from '../../assets/crown.svg'
 
 import CartIcon from '../../components/cart-icon/cart-icon.component'
@@ -28,6 +26,9 @@ const Navigation = () => {
             </Link>
             <Link className='nav-link' to='/shop'>
               Shop
+            </Link>
+            <Link className='nav-link' to='/checkout'>
+              Check Out
             </Link>
             { currentUser ? (
               <span className='nav-link' onClick={ signOutAuthUser }>
