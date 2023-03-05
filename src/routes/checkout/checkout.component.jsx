@@ -9,7 +9,7 @@ const Checkout = () => {
     const { cartItems, totalCartValue } = useContext(CartContext);
 
     return (
-        <div className="checkout-page">
+        <div className="checkout-container">
             <div className="checkout-header">
                 <div className="header-block">
                     <span>Product</span>
@@ -27,14 +27,10 @@ const Checkout = () => {
                     <span>Remove</span>
                 </div>
             </div>
-            {
-                cartItems.map(cartItem => {
-                    return (
-                    <span key={cartItem.id}>
-                        <CheckoutItem cartItem={cartItem} />
-                    </span>
-                )})
-            }
+            {cartItems.map(cartItem =>
+                <CheckoutItem key={cartItem.id} cartItem={cartItem} />              
+            )}
+
             <div className="total">
                 <span>TOTAL: ${totalCartValue}</span>
             </div>
