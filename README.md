@@ -11,36 +11,12 @@ This site is hosted live and can be accessed at [https://janell-huyck-clothing-e
 
 ## Local Installation
 
-You can also install and run this application locally. However, this would require you to create your own Firebase database and update the code to reference it. Here are the steps to run this application locally:
+You COULD also install and run this application locally. However, this would require you to create your own Firebase database and update the code to reference it. You would also need to provide all the data for the products in database.  Because the data for the database is not stored in the source code, I do not recommend attempting this.  Instead, please just use the live demo linked above.
 
-1. Clone the repository to your local machine.
-2. Navigate into the project directory.
-3. Run `npm install` to install all the dependencies.
-4. Create your own Firebase database and set up a new .env file to handle the config.
-   1. The Firebase config is stored at src/utils/firebase/firebase.utils.js
-   2. Create a .env file with the following environment variables, using your own Firebase data:
-   ```
-    REACT_APP_API_KEY,
-    REACT_APP_AUTH_DOMAIN,
-    REACT_APP_PROJET_ID,
-    REACT_APP_STORAGE_BUCKET,
-    REACT_APP_MESSAGING_SENDER_ID,
-    REACT_APP_APP_ID,
-    REACT_APP_MEASURENT_ID
-    ```
-5. Once all these steps are complete, run `npm start` to start the application.
-
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-npm install
-# Update the firebase database references in your code
-npm start
-```
 
 ## Usage
 
-Upon launching the application, users are greeted with a login page. From here, users can navigate to the home page by clicking on the icon in the upper left corner. The navigation buttons at the top of the screen provide a seamless way to move between different sections of the website.
+Upon launching the application, users are greeted with a login page. From here, users can navigate to the home page by clicking on the icon in the upper left corner or by selecting "Home" from the top navigation. The navigation buttons at the top of the screen provide a seamless way to move between different sections of the website.
 
 Users can easily add an item to the shopping cart by clicking on the desired item. To modify the contents of the shopping cart, click on the cart icon to view its contents, and then adjust the quantities or remove items as desired.
 
@@ -59,3 +35,6 @@ The E-Commerce Demo site owes significant credit for design and CSS assistance t
 ## License
 
 The project is open source and available under the [MIT License](LICENSE).
+
+
+(Note: The critical eye may notice that there is no git history for this project before it's a working project.  If this is concerning to you, rest assured it's nothing sinister - just a hacky way to get rid of an accidentally committed hard-coded API key for this small repo with only one contributor.)
